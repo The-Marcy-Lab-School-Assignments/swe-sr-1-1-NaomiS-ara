@@ -32,10 +32,35 @@ Below, we've provided an outline for your response but feel free to modify it as
 
 [Replace with your explanation of the concept with an analogy]
 
+According to MDN a function is =
+"A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when something invokes (calls) it."
+
+Okay so this is how I made sense of functions:
+A function is like a calculator.
+You press buttons and give it some numbers (those are the parameters), and the calculator knows what to do — like add, subtract, whatever (that’s the code block).
+When you hit the “=” button, that’s like calling the function — you’re telling it to run.
+And the number that shows up on the screen? That’s the return value — the answer it gives you back.
+So yeah, a function is basically just a little machine that takes some input, does something, and gives you an output. Once I thought of it like that, it started to click.
+
+
 Check out this example:
 
 ```js
-// Add your example here
+// const addNumbers = (a, b) => {
+return a + b;
+};
+// calling (invoking) the function
+let result = addNumbers(5, 3); 
+// result will be 8) console.log(result);
 ```
 
-[Replace with your explanation of the example and explanation of the syntax]
+
+To break it down line by line =
+const addNumbers = (a, b) => { ... }
+This is an arrow function assigned to a constant named addNumbers.
+(a, b) are the parameters — these act like placeholders for the values you pass into the function.
+The { return a + b; } part is the code block — it’s the section where the function does its work.
+The line return a + b; is the return statement — it tells the function what value to give back to the place where it was called.
+addNumbers(5, 3); is how we call (or invoke) the function — we’re telling it to run with 5 and 3 as the inputs.
+
+
